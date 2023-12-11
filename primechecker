@@ -1,0 +1,12 @@
+n = int(input('enter the number to check prime or not'))
+flag = 1
+for i in range(2,n//2):
+    if n%i==0:
+        print(f'{n} is composite')
+        flag=1
+        break
+    else:
+        flag=0
+if flag ==0: print(f'{n} is a prime')
+
+ 
